@@ -18,5 +18,12 @@ $(".img-thumbnail").click(projectClick);
 function projectClick(e) {
 	e.preventDefault();
 	$(this).css("background-color", "#7fff00")
+	$(this).parent().next().toggle();
 	console.log("It works!");
 }
+
+$(".nav-item").click(function(e) {
+	$(this).toggleCLass("active").siblings().removeClass("active")
+	console.log(toggle.class)
+}
+)
